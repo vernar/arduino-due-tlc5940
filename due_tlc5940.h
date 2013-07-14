@@ -36,34 +36,48 @@ File name: tlc5940.h
 #include "due_tlc5940_config.h"
 
 
-////////////////////////////////////////////////////////////////////////////////
-/// Setup:
-/// 
-/// (1) To use this library, copy all the files in this folder into your 
-///     sketch's folder.
-/// (2) Edit the parameters in due_tlc5940_config.h.
-///
-/// (3) #include "due_tlc5940.h" in your sketch.
-///
-/// The files have to be in your sketch's directory to allow individual 
-/// customization via the #defines in the config file, which is unfortunately
-/// necessary -- the name of the interrupt handler function must be known at
-/// compile-time, which basically means we're dependent upon #defines to 
-/// configure the library.
-///
-/// 
-/// Usage:
-/// 
-/// Call initTLC5940() somewhere early in your sketch (in your setup function,
-/// for example).
-/// 
-/// Change grayscale values for TLC5940 output channels with the following
-/// functions:
-/// - setGSData(<outputChannel>, <value>)
-/// - setAllGSData(<value>)
-///
-/// Grayscale data is not sent to the TLC5940 until you call sendGSData().
-///
+/*
+================================================================================
+Setup:
+
+(1) To use this library, copy all the files in this folder into your 
+    sketch's folder.
+(2) Edit the parameters in due_tlc5940_config.h.
+(3) #include "due_tlc5940.h" in your sketch.
+
+The files have to be in your sketch's directory to allow individual 
+customization via the #defines in the config file, which is unfortunately
+necessary -- the name of the interrupt handler function must be known at
+compile-time, which basically means we're dependent upon #defines to 
+configure the library.
+
+ 
+Usage:
+ 
+Call initTLC5940() somewhere early in your sketch (in your setup function,
+for example).
+
+
+You can manipulate grayscale values for TLC5940 output channels with the 
+following functions.  The grayscale values range from 0 (completely off) 
+through 4095 (completely on).
+- setGSData(<outputChannel>, <value>)
+- setAllGSData(<value>)
+- getGSData(<outputChannel>)
+
+Grayscale data is not sent to the TLC5940 until you call sendGSData().
+
+
+The following functions are used for dot-correction values.  The dot-
+correction values range from 0 (no output is allowed on that channel)
+through 63 (maxmimum output is allowed).
+- setDCData(<outputChannel>, <value>)
+- getDCData(<outputChannel>)
+
+Send the dot-correction data to the TLC5940 with sendDCData ().
+================================================================================
+*/
+
 
 #ifndef GSCLK_TC
   #error GSCLK_TC must be defined.

@@ -276,7 +276,6 @@ uint16_t getGSData(uint8_t tlcOutput)
       : // starts clean
           (((uint16_t)(*index12p)) << 4) | // upper 8 bits
           ((*(index12p + 1) & 0xF0) >> 4); // lower 4 bits
-  // that's probably the ugliest ternary operator I've ever created.
  }
 
 
@@ -337,7 +336,7 @@ byte tlc_DCData[NUM_TLCS * 16] = INITIAL_DCDATA;
 
 void setDCData(uint8_t tlcOutput, byte value)
   // Sets a value in the local tlc_DCData array which will be used as the
-  // cot-correction value for the specified TLC5940 output the next time sendDCData
+  // dot-correction value for the specified TLC5940 output the next time sendDCData
   // is called.  OUT0 of the first TLC is tlcOutput = 0, OUT0 of the next TLC 
   // is tlcOutput = 16, and so on.  63 is the maximum allowed value.
  {
