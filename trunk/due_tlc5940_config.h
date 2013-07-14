@@ -137,13 +137,10 @@ File name: due_tlc5940_config.h
 // are TLC5940 output channels (i.e. NUM_TLCS * 16).  The first entry is 
 // channel 0.
 
-//#define INITIAL_DCDATA {63, 63, 63, \
-//                        63, 63, 63, \
-//                        63, 63, 63, \
-//                        63, 63, 63, \
-//                        63, 63, 63, \
-//                        0}
-#define INITIAL_DCDATA {0, 0, 0, 63, 63, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+#define INITIAL_DCDATA {63, 63, 63, 63, \
+                        63, 63, 63, 63, \
+                        63, 63, 63, 63, \
+                        63, 63, 63, 63}
 
 
 ////////////////////////////////////////////////////////////////////////////////
