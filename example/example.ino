@@ -2,7 +2,7 @@
 ================================================================================
 File name: example.ino
    System: Due TLC5940 Library
- Platform: Arduino Due (Amtel SAM3X8E ARM Cortex-M3)
+ Platform: Arduino Due (Atmel SAM3X8E ARM Cortex-M3)
    Author: Madeline Usher
   Created: July 6, 2013
   Purpose: Example showing usage of the TLC5940 Library.

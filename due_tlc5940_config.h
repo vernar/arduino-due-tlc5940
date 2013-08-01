@@ -2,7 +2,7 @@
 ================================================================================
 File name: due_tlc5940_config.h
    System: Due TLC5940 Library
- Platform: Arduino Due (Amtel SAM3X8E ARM Cortex-M3)
+ Platform: Arduino Due (Atmel SAM3X8E ARM Cortex-M3)
    Author: Madeline Usher
   Created: July 5, 2013
   Purpose: Configuration parameters for the Due TLC5940 Library.

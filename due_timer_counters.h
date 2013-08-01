@@ -2,11 +2,11 @@
 ================================================================================
 File name: due_timer_counters.h
    System: Due TLC5940 Library
- Platform: Arduino Due (Amtel SAM3X8E ARM Cortex-M3)
+ Platform: Arduino Due (Atmel SAM3X8E ARM Cortex-M3)
    Author: Madeline Usher
   Created: July 5, 2013
   Purpose: Declarations useful for working with the SAM3X8E timer counters,
-           particularly in translating between Arduino Due pins and Amtel
+           particularly in translating between Arduino Due pins and Atmel
            library constants.
 ================================================================================
   $LastChangedDate$
