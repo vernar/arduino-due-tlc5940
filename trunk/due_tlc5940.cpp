@@ -2,7 +2,7 @@
 ================================================================================
 File name: tlc5940.c
    System: Due TLC5940 Library
- Platform: Arduino Due (Amtel SAM3X8E ARM Cortex-M3)
+ Platform: Arduino Due (Atmel SAM3X8E ARM Cortex-M3)
    Author: Madeline Usher
   Created: June 27, 2013
   Purpose: Code specific to handling the TLC5940 is broken out into this file.
